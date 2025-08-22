@@ -31,14 +31,14 @@
 
 // creating elements ==============
 
-const ul = document.querySelector('ul');
-const li = document.createElement('li')
+// const ul = document.querySelector('ul');
+// const li = document.createElement('li')
 
-// adding elements
-ul.append(li)
+// adding elements  =============
+// ul.append(li)
 
-// modifying the text
-li.innerText = 'X-men'
+// modifying the text ===========
+// li.innerText = 'X-men'
 
 // const firstListItem = document.querySelector('.list-items')
 // console.log(firstListItem.innerText)
@@ -46,7 +46,7 @@ li.innerText = 'X-men'
 // console.log(firstListItem.innerHTML)
 
 
-// modifying attributes and classes
+// modifying attributes and classes ===============
 
 // li.setAttribute('id', 'title');
 // li.removeAttribute('id');
@@ -54,12 +54,54 @@ li.innerText = 'X-men'
 // title.getAttribute('id')
 
 
-li.classList.add('list-items');
-li.classList.remove('list-items');
+// li.classList.add('list-items');
+// li.classList.remove('list-items');
 
 // console.log(li.classList.contains('list-items')) 
 
-// remove elements
-li.remove()
+// remove elements  ===============
+// li.remove(li.classList.contains('list-items'))
+
+
+
+
+
+
+
+
+// Traverse the DOM  ==============
+
+// Parent Node Traversal  ===============
+
+// const ul = document.querySelector('ul')
+// console.log(ul.parentNode.parentNode)
+// console.log(ul.parentElement.parentElement)
+// const html = document.documentElement;
+// console.log(html.parentNode) // #document
+// console.log(html.parentElement) // null
+
+
+// Child Node Traversal  ================
+
+
+// const ul = document.querySelector('ul');
+// console.log(ul.childNodes)
+// console.log(ul.firstChild)
+// console.log(ul.lastChild)
+// ul.childNodes[1].style.backgroundColor = 'green';
+// console.log(ul.children)
+// console.log(ul.firstElementChild)
+// console.log(ul.lastElementChild)
+
+
+
+// Sibling Node Traversal  ===========
+const ul = document.querySelector('ul');
+const div = document.querySelector('div');
+// console.log(div.childNodes)
+// console.log(ul.previousSibling)
+// console.log(ul.nextSibling)
+// console.log(ul.previousElementSibling)
+// console.log(ul.nextElementSibling)
 
 
