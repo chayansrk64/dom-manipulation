@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+    <style>
+        ul{
+            border: 2px solid peru;
+        }
+        ul li{
+            list-style-type: none;
+            font-size: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul id="sports">
+        <li id="football">Football</li>
+        <li id="basketball">Basketball</li>
+        <li id="boxing">Boxing</li>
+        <li id="tennins">Tennins</li>
+        <li id="golf">Golf</li>
+    </ul>
+
+    <script>
+        // document.querySelector('#football').addEventListener('click', function(e){
+        //     console.log('Footabll is clicked')
+        //     const target = e.target;
+        //     if(target.matches('li')){
+        //         target.style.backgroundColor = 'lightgrey'
+        //     }
+        // })
+
+        // event delegation
+        document.querySelector('#sports').addEventListener('click', function(e){
+            
+            const target = e.target;
+            if(target.matches('li')){
+                target.style.backgroundColor = "lightgrey"
+            }
+        })
+        
+    </script>
+</body>
+</html>
