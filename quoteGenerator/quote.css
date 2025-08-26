@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: lightgrey;
+    height: 100vh;
+}
+.container{
+    border: 4px solid white;
+    width: 550px;
+    height: 350px;
+    padding: 10px;
+}
+.header{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: peru;
+    border: 2px solid white;
+}
+.main-content{
+    height: 175px;
+}
+.main-content .qoute{
+    font-size: 1.4rem;
+    color: midnightblue;
+    padding: 20px;
+}
+
+
+.person{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    color: peru;
+}
+button{
+    padding: 5px 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    background-color: peru;
+    border: 2px solid white;
+}
+button:active{
+    background-color: black;
+}
